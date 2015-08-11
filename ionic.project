@@ -1,0 +1,12 @@
+{
+  "name": "FevOne",
+  "app_id": "e5792ff3",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
