@@ -1,9 +1,9 @@
     angular
     .module('starter.controllers', [])
-    .controller('BronchodialatorController', BronchodialatorController)
+    .controller('BronchodilatorController', BronchodilatorController)
     .controller('AsthmaController', AsthmaController)
 
-    function BronchodialatorController($scope, BronchodialatorFactory) {
+    function BronchodilatorController($scope, BronchodilatorFactory) {
         var vm = this;
 
         vm.data = {
@@ -18,10 +18,10 @@
                 vm.data.post = parseInt(vm.data.pre);
             }
 
-            if (BronchodialatorFactory.isNormal(vm.data.pre)) {
+            if (BronchodilatorFactory.isNormal(vm.data.pre)) {
                 vm.data.severity = 'Normal';
             } else {
-                vm.data.severity = BronchodialatorFactory.severityCalculator(vm.data.pre);
+                vm.data.severity = BronchodilatorFactory.severityCalculator(vm.data.pre);
             }
 
             vm.data.diagnosis = 'Undetermined';
@@ -37,13 +37,13 @@
                     vm.data.severity = 'Mild';
                 }
             } else {
-                vm.data.severity = BronchodialatorFactory.severityCalculator(vm.data.pre);
+                vm.data.severity = BronchodilatorFactory.severityCalculator(vm.data.pre);
             }
 
             if (parseInt(vm.data.post) === parseInt(vm.data.pre)) {
                 vm.data.diagnosis = 'Undetermined ';
             }  else {
-                vm.data.diagnosis = BronchodialatorFactory.diagnosis(vm.data.pre, vm.data.post);
+                vm.data.diagnosis = BronchodilatorFactory.diagnosis(vm.data.pre, vm.data.post);
             }
 
         });
