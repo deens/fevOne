@@ -1,8 +1,8 @@
     angular
         .module('starter.services', ['ionic'])
-        .factory('BronchodialatorFactory', BronchodialatorFactory);
+        .factory('BronchodilatorFactory', BronchodilatorFactory);
 
-    function BronchodialatorFactory()
+    function BronchodilatorFactory()
     {
         var service = {
             isNormal: isNormal,

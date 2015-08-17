@@ -33,17 +33,15 @@
       url: "/welcome",
       views: {
           welcome: {
-          
                 templateUrl: 'templates/welcome.html'
           }
-      
       }
   })
-  .state('bronchodialator', {
-      url: '/bronchodialator',
+  .state('bronchodilator', {
+      url: '/bronchodilator',
       views: {
-          bronchodialator: {
-              templateUrl: 'templates/bronchodialator.html'
+          bronchodilator: {
+              templateUrl: 'templates/bronchodilator.html'
           }
       }
   })
